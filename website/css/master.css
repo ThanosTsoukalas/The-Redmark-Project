@@ -1,0 +1,95 @@
+
+:root{
+    --color-text-black: #333333;
+    --color-navbar-gray: #f1f1f1;
+    --color-brand-red:  #e30000;
+    --color-brand-red-dark:  #a61b1b;
+    --color-brand-red-light:  #d54a4a;
+    
+}
+body, html{
+    overflow-x: hidden;
+    font-family: 'myriad-pro', Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans"; 
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-black);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    background: var(--color-navbar-gray);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar img{
+    width: 10rem;
+    height: auto;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.navbar .menu{
+    display: flex;
+    list-style-type: none;
+    transform: translateY(2px);
+}
+
+.menu .menu-item{
+    padding: 0.1rem;
+    margin: 0.4rem;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: var(--color-text-black);
+    font-size: 1.2rem;
+}
+
+.main-wrapper{
+    margin: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+}
+
+.title-button h1{
+    width: 30rem;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 200;
+}
+
+.red-main-btn{
+    background-color: var(--color-brand-red);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-family: myriad-pro, sans-serif;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-right: 0.6rem;
+}
+.red-main-btn:last-child{
+    background-color: white;
+    border: 1px solid var(--color-text-black);
+    color: rgb(77, 77, 77);
+}
+
+.red-main-btn:last-child:hover{
+    background-color: white;
+    border: 1px solid var(--color-text-black);
+    color: rgb(77, 77, 77);
+}
+.red-main-btn:hover{
+    background-color: var(--color-brand-red-light);
+    cursor: pointer;
+}
